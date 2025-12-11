@@ -70,5 +70,7 @@ async def scan_ic(file: UploadFile = File(...), part_number: str = Form(...)):
         'part_number': part_number,
         'status': result['status'],
         'confidence': result['confidence'],
-        'issues': result['issues']
+        'issues': result['issues'],
+        'explanation': result.get('explanation', ''),
+        'detected_data': result.get('detected_data', {})
     }
