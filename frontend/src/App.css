@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+.App h1 {
+  margin-top: 2rem;
+  color: #333;
+}
+
+.App p {
+  color: #666;
+}
